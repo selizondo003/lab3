@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Conditions</title>
+</head>
+<body>
+    <button id="go">my button</button>
+    <script defer>
+        const myNum = 5;
+        
+
+        if(myNum > 10){
+            console.log(myNum, "myNum is greater than zero");
+        }
+        else if(myNum === 5){
+            console.log(`${myNum} is 5`);
+        }
+        else if (myNum == "green"){
+            console.log("myNum is something not 5 and less than 10");
+        }
+
+        console.log("code after condition");
+        console.log();
+
+        if ((myNum >= 10) ||(myNum <= 5)){
+            //console.log(`${myNum} is between 0 and 5, both included`);
+        }
+        //we can also check the boolean condition if an element exists on the page. If so, run some code when the element is clicked.
+        const button = document.getElementById('go');
+        if(button) {
+            console.log("we have a button!");
+            button.onclick = ()=>{
+                alert('hello');
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
